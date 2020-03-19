@@ -1,0 +1,54 @@
+@import "variables";
+
+/* mixin кнопки button ==============================*/
+.btn() {
+    display: block;
+    height: 47px;
+    width: 169px;
+    background-color: @bc_button;
+    text-transform: uppercase;
+    transition: 
+    background 0.5s ease, 
+    color 0.5s ease;
+    font-size: @fz_button;
+    color: @text_p1;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* mixin кнопки button при наведении курсора */
+
+.btn_hover() {
+    background-color: @bc_button_hover;
+    color: @text_p2;
+    cursor: pointer;
+}
+/* END mixin кнопки button ==============================*/
+
+
+/* mixin для form ========================================= */
+
+/* mixin для wrapper input */
+
+.wrapper_form() {
+    display: block;
+    border-bottom: 1px solid @border_input_item;
+    position: relative;
+    width: 160px;
+    height: 50px;
+    margin: 0 30px 0 0;
+}
+
+/*  mixin input form  */
+
+.form_input_item() {
+    width: 159px;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid @border_input_item;
+    color:  @text_input_item;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
